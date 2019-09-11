@@ -11,6 +11,7 @@ import { BrowserRouter } from 'react-router-dom/cjs/react-router-dom.min';
 import { Home } from '../pages';
 
 const Root = () => (
+    
     <Provider store={store}>
     <BrowserRouter>
             <Route exact path="/" component={Home}/>
