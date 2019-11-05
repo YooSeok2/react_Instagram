@@ -9,8 +9,6 @@ import {  Link } from 'react-router-dom';
 
 const About =({address, sign, name, password}) =>{
  
-    
-    
         return(
         <div className="aboutMain">
         <div className="articleChild2_div1">    

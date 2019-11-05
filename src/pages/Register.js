@@ -9,17 +9,7 @@ import {  Link } from 'react-router-dom';
 
 
 
-const Register = ({address,name, sign, password, changepage,warning, style, to,
-ad,na, si, pass})=>{
-        const btnClick =()=>{
-           const content = ad+na+si+pass
-            fetch('http://localhost:3000/',
-            {
-                method : 'POST',
-                body : JSON.stringify(content)
-            }).then(res=>console.log(res.json()));
-            
-        }
+const Register = ({address,name, sign, password, warning, style, to, changepage})=>{
         
         return(
             
@@ -59,7 +49,7 @@ ad,na, si, pass})=>{
                 </label>
             </div>
             <div className='articleChild2_div1_main_form_div1'>  
-               <button type="submit" className='articleChild2_div1_main_form_div1_button' onClick={btnClick} >
+               <button type="submit" className='articleChild2_div1_main_form_div1_button' onClick={changepage}>
                    <Link to={to}>가입</Link>
                </button>
                

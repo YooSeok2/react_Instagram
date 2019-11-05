@@ -1,16 +1,16 @@
 const express = require('express');
-const cookieParser = require('cookie-parser');
+
 // const path = require('path');
 // const os =require('os');
-const port = process.env.PORT || '3000';
+const port = process.env.PORT || '5000';
 // const os = require('os');
 
 const app = express();
 // const PORT = process.env.PORT||3000;
-
-app.use(express.urlencoded({extended:false}));
+app.use(express.json());
+app.use(express.urlencoded({extended:true}));
 app.use('/', express.static(__dirname+'../public/index.html'));
-app.use(cookieParser());
+app.use(express.cookieParser());
 
 app.get(port, function(req,res){
     const content = req.content;
