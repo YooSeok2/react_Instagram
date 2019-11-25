@@ -30,3 +30,17 @@ REACTJS공부를 위한 INSTAGRAM 메인화면 구현
 ### NextPage </br>
 
 ![nextpage](./images/nextpage.png)
+
+***
+
+# 사용 라이브러리
+
+* *create-react-app* 폴더명
+
+* *npm(node) 사용*
+
+* *react-router : npm react-router-dom* react에서 페이지를 이동할 때 유용한 라이브러리</br>
+  **참고자료링크 : https://github.com/ReactTraining/react-router**</br>
+* *redux : npm redux, npm react-redux, npm immutable*</br>
+  **참고자료링크 : https://github.com/reduxjs/redux**</br>
+  앞에 2개의 라이브러리는 리덕스에서 제공하는 함수를 활용하기 위한 설치, immutable은 자료형 데이터를 효율적으로 관리하기 위한 설치
