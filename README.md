@@ -17,4 +17,16 @@ REACTJS공부를 위한 INSTAGRAM 메인화면 구현
 
 ***
 
-# 
+# 구현 이미지
+
+### Main
+</br>
+![main](./images/main.png)
+
+### 조건에 만족을 못할 시
+</br>
+![email](./images/email.png)
+
+### NextPage
+</br>
+![nextpage](./images/nextpage.png)
