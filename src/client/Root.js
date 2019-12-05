@@ -1,9 +1,6 @@
 import React from 'react';
-// import { Router } from 'react-router-dom';
 import {Provider} from 'react-redux';
-// import App from '../shared/App';
 import AboutContainer from '../containers/AboutContainer';
-// import RegisterContainer from '../containers/RegisterContainer';
 import { Route } from 'react-router-dom';
 
 import store from '../store';

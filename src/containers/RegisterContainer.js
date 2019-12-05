@@ -11,15 +11,11 @@ class RegisterContainer extends Component {
         TodoActions.insert_address(e.target.value);
     }
 
-   
-
     handleChange_sign = (e)=>{
         const {TodoActions}=this.props;
         TodoActions.insert_sign(e.target.value);
         
     }
-
-   
 
     handleChange_name = (e)=>{
         const {TodoActions}=this.props;
@@ -27,16 +23,12 @@ class RegisterContainer extends Component {
        
     }
   
-
     handleChange_password = (e)=>{
         const {TodoActions}=this.props;
         TodoActions.insert_password(e.target.value);
        
     }
     
-
-
-
     change_page = ()=>{
         const {address, name, sign, password, TodoActions} = this.props;
         
@@ -58,11 +50,6 @@ class RegisterContainer extends Component {
             TodoActions.set_to('/about');
         }
     }
-
-   
-    
-
-   
 
     render(){
         const {handleChange_address,handleChange_name,

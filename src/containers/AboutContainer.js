@@ -5,20 +5,15 @@ import {bindActionCreators} from 'redux';
 import  * as todoAction from '../store/modules/register';
 
 class AboutContainer extends Component{
-
-
-
-
     render(){
         const {address, sign, name, password} = this.props;
         
         return(
-            <About 
-            
-            address = {address}
-            sign = {sign}
-            name = {name}
-            password = {password}
+            <About
+                address = {address}
+                sign = {sign}
+                name = {name}
+                password = {password}
             />
 
         );
@@ -26,7 +21,7 @@ class AboutContainer extends Component{
 }
 
 export default connect(
-    ({register})=>({
+    ({register})=>({   //props으로 넣어줄 스토어 상태값 => register : 스토어 이름으로 비구조화 할당
         address: register.get('address'),
         sign: register.get('sign'),
         name: register.get('name'),

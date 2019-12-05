@@ -1,12 +1,7 @@
 const express = require('express');
-
-// const path = require('path');
-// const os =require('os');
 const port = process.env.PORT || '5000';
-// const os = require('os');
-
 const app = express();
-// const PORT = process.env.PORT||3000;
+
 app.use(express.json());
 app.use(express.urlencoded({extended:true}));
 app.use('/', express.static(__dirname+'../public/index.html'));
@@ -22,7 +17,6 @@ app.get(port, function(req,res){
     )
 })
 
-// app.get('')
 
 const server = app.listen(port, ()=>{
     var host = server.address().address;
